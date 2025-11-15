@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                  // Use ES6 or later for modern features
+    "module": "Node16",               // Align with Node.js ESM
+    "moduleResolution": "Node16",     // For proper resolution of ESM packages
+    "strict": true,                   // Enable strict type checking
+    "esModuleInterop": true,          // Support CommonJS imports
+    "allowSyntheticDefaultImports": true,  // Allow default imports from non-ESM modules
+    "skipLibCheck": true,             // Skip type checking for node_modules
+    "resolveJsonModule": true,        // Allow importing JSON files
+    "outDir": "./dist",               // Specify the output directory
+    "baseUrl": "./"                   // Resolve non-relative module imports from the project root
+  },
+  "include": [
+    "src/**/*",
+    "server.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

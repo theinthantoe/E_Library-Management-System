@@ -1,0 +1,9 @@
+import mongoose from "mongoose";
+const moduleSchema = new mongoose.Schema({name: {
+        type: String,
+            required: true,
+            unique: true,
+    },
+});
+const Module = mongoose.model('Module', moduleSchema);
+export {Module}
